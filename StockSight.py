@@ -1,6 +1,3 @@
-import os
-os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
-
 import streamlit as st
 import pandas as pd
 import numpy as np
