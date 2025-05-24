@@ -6,7 +6,7 @@ import matplotlib.dates as mdates
 import yfinance as yf
 from datetime import datetime, timedelta
 from sklearn.preprocessing import MinMaxScaler
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 
 # App configuration
 st.set_page_config(layout="wide", page_title="Apple Stock Analyzer")
