@@ -135,7 +135,9 @@ elif st.session_state.page == "forecasting":
     last_sequence = scaled_data[-window_size:]
 
     try:
-        model = load_model("lstm_model.h5")
+        import os
+        model_path = os.path.join(os.getcwd(), "lstm_model.h5")
+        model = load_model(model_path)
         st.success("You are ready to go")
     except Exception as e:
         st.error("Failed to load pre-trained model. Please ensure 'lstm_model.h5' is present.")
