@@ -3,5 +3,6 @@ pandas
 numpy
 matplotlib
 yfinance
-tensorflow
 scikit-learn
+keras
+tensorflow
